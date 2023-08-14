@@ -24,7 +24,10 @@ export default function PatientAlert() {
                 <h4>Summary</h4>
               </th>
               <th scope="col">
-                <h4>Referral Type</h4>
+                <a>
+                  {' '}
+                  <h4>Referral Type</h4>
+                </a>
               </th>
               <th scope="col">
                 <h4>First Name</h4>

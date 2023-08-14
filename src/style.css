@@ -12,19 +12,18 @@
 i {
   color: #424040;
 }
-.heading {
+/* .heading {
   background-color: var(--heading-background);
   max-width: fit-content;
   justify-content: center;
   margin-left: 20px;
-}
+} */
 .heading h3 {
   padding: 2px;
   color: var(--heading);
 }
 .patient-details {
   background-color: #c4edd6;
-  padding-bottom: 10px;
 }
 
 .patient-details-div {
@@ -53,4 +52,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.patient-queue {
+  background-color: #fffae7;
 }

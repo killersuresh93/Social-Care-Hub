@@ -1,10 +1,10 @@
 import * as React from 'react';
-
+import PatientAlert from './patientAlert';
 export default function PatientDetails() {
   return (
     <div className="patient-details">
       <div className="heading">
-        <h2>Referral ID:0000000</h2>
+        <h3>Referral ID:0000000</h3>
       </div>
       <div className="patient-details-div row">
         <div className="col-md-5">
@@ -13,7 +13,6 @@ export default function PatientDetails() {
               <div
                 style={{
                   backgroundColor: '#F6782B',
-                  padding: '10px',
                   width: '100px',
                   height: '180px',
                 }}
@@ -36,7 +35,7 @@ export default function PatientDetails() {
                   <br />
                 </section>
               </div>
-              <div style={{ padding: '5px', top: '-10px' }}>
+              <div style={{ padding: '5px' }}>
                 <section>
                   Birth Sex : <b>F</b>
                   <br />
@@ -78,7 +77,11 @@ export default function PatientDetails() {
             </table>
           </div>
         </div>
+        
       </div>
+      <br/>
+      <PatientAlert />
+      
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PatientAlert from './patientAlert';
 import PatientQueue from './patientQueue';
+import PatientActivities from './patientActivities';
 export default function PatientDetails() {
   return (
     <div className="patient-details">
@@ -12,38 +13,50 @@ export default function PatientDetails() {
           <div className="col-md-5">
             <div className="patient-info ">
               <div className="patient-info-div">
-                <div
-                  style={{
-                    backgroundColor: '#F6782B',
-                    width: '100px',
-                    height: '180px',
-                  }}
-                ></div>
+                <div className="patient-info-orangeBox"></div>
                 <div style={{ padding: '5px' }}>
-                  <section>
-                    First Name : <b>Robin</b>
-                    <br />
-                    Last Name : <b>Hollond</b>
-                    <br />
-                    Birth Date : <b>03/12/2000</b>
-                    <br />
-                    Ethnicity:<b>Non-Hispanic or Latin(a)(o)(x)</b>
-                    <br />
-                    Cell Phone: <b>864-378-8975</b>
-                    <br />
+                  <table>
+                    <tr>
+                      <td>
+                        {' '}
+                        First Name : <b>Robin</b>
+                      </td>
+                      <td>
+                        Birth Sex : <b>F</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        {' '}
+                        Last Name : <b>Hollond</b>
+                      </td>
+                      <td>
+                        Pronouns:<b>She/Her</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        {' '}
+                        Birth Date : <b>03/12/2000</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Ethnicity:<b>Non-Hispanic or Latin(a)(o)(x)</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Cell Phone: <b>864-378-8975</b>
+                      </td>
+                    </tr>
                     Home Phone: <b>816-487-5858</b>
-                    <br />
-                    Email: <b>snagel@ch.com</b>
-                    <br />
-                  </section>
-                </div>
-                <div style={{ padding: '5px' }}>
-                  <section>
-                    Birth Sex : <b>F</b>
-                    <br />
-                    Pronouns:<b>She/Her</b>
-                    <br />
-                  </section>
+                    <tr>
+                      <td>
+                        Email: <b>snagel@ch.com</b>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -85,6 +98,8 @@ export default function PatientDetails() {
       <PatientAlert />
       <br />
       <PatientQueue />
+      <br />
+      <PatientActivities />
     </div>
   );
 }

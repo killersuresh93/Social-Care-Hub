@@ -5,12 +5,16 @@
 }
 
 * {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Arial', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-size: small;
+  font-weight: 400;
   padding: 0px;
   border: 0px;
 }
 i {
   color: #424040;
+  padding: 5px;
 }
 /* .heading {
   background-color: var(--heading-background);
@@ -43,6 +47,11 @@ i {
   background-color: #f6e5e3;
   padding: 10px 0px 10px 0px;
 }
+.patient-info-orangeBox {
+  background-color: #f6782b;
+  width: 100px;
+  height: 180px;
+}
 .patient-alert {
   background-color: #ffffff;
   margin: 5px;
@@ -55,4 +64,40 @@ i {
 }
 .patient-queue {
   background-color: #fffae7;
+}
+.patient-activities-container {
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity-button {
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+  margin: 5px;
+}
+.activity-button i {
+  color: #ffffff;
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .patient-info {
+    background-color: #c4d6c0;
+    padding: 10px 0px 10px 0px;
+  }
+  .patient-info-orangeBox {
+    background-color: #f6782b;
+    width: 50px;
+    height: 180px;
+  }
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

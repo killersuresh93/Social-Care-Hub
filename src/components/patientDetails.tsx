@@ -101,8 +101,16 @@ export default function PatientDetails() {
       <PatientQueue />
       <br />
       <PatientActivities />
+      <div className="main-button-row">
+        <button className="main-button">Button1</button>{' '}
+        <button className="main-button">Button2</button>
+      </div>
       <br />
       <PatientStatusDiescription />
+      <div className="main-button-row">
+        <button className="main-button">Button1</button>{' '}
+        <button className="main-button">Button2</button>
+      </div>
     </div>
   );
 }

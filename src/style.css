@@ -69,6 +69,19 @@ i {
   background-color: #ffffff;
   margin-bottom: 5px;
 }
+/* main buttons */
+.main-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-button {
+  background-color: #7a7f93;
+  color: #ffffff;
+  padding: 10px 10px 10px 10px;
+  width: 20%;
+  margin: 5px;
+}
 .button-row {
   display: flex;
   align-items: center;
@@ -130,12 +143,15 @@ i {
   background-color: #d7e3bf;
   outline: none;
   border: none;
-  width: 100%;
+  padding: 10px;
+  width: 60%;
+  height: 200px;
 }
 .text-editor-button-row {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 60%;
 }
 .text-editor-button {
   background-color: #7a7f93;
@@ -144,7 +160,7 @@ i {
   width: 20%;
   margin: 5px;
 }
-.patient-status-description-hedder {
+.hedder {
   background-color: #595959;
   color: #ffffff;
   display: flex;
@@ -156,27 +172,27 @@ i {
   outline: none;
   background-color: #595959;
   color: #ffffff;
+  padding: 5px;
 }
-
-.planned {
+.status option {
+  padding: 10px; /* Add padding to all options */
+  border: none; /* Remove default border */
+}
+.status option.planned {
   background-color: yellow;
   color: #000000;
-  padding: 20px;
 }
-.progress {
+.status option.progress {
   background-color: rgb(248, 163, 5);
   color: #000000;
-  padding: 20px;
 }
-.scheduled {
+.status option.scheduled {
   background-color: darkorchid;
   color: #000000;
-  padding: 20px;
 }
-.complete {
+.status option.complete {
   background-color: green;
   color: #000000;
-  padding: 20px;
 }
 
 /* Media query for mobile devices */
@@ -201,5 +217,11 @@ i {
     padding: 10px 10px 10px 10px;
     width: 100%;
     margin: 5px;
+  }
+  .text-editor-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
   }
 }

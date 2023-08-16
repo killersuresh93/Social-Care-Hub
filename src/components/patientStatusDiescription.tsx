@@ -8,28 +8,18 @@ export default function PatientStatusDescription() {
         <h3>Referral ID:XXXXXXX</h3>
       </div>
 
-      <div className="patient-status-description-hedder">
+      <div className="hedder">
         <div>
           <h4>Patient status description</h4>
         </div>
         <div>
           <h4>
-            {' '}
-            <select
-              className="custom-select "
-            >
+            <select className="status">
               <option selected>Status</option>
               <option className="planned" value="planned">
                 Planned
               </option>
-              <option
-                style={{
-                  backgroundColor: 'orange',
-                  padding: '5px',
-                  color: '#000000',
-                }}
-                value="progress"
-              >
+              <option className="progress" value="progress">
                 In Progress
               </option>
               <option className="scheduled" value="scheduled">
@@ -40,6 +30,17 @@ export default function PatientStatusDescription() {
               </option>
             </select>
           </h4>
+        </div>
+      </div>
+      <div className="">
+        <TextEditor />
+      </div>
+      <div className="hedder">
+        <div>
+          <h4>Notes</h4>
+        </div>
+        <div>
+          <h4>Date</h4>
         </div>
       </div>
       <div className="">

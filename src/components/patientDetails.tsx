@@ -2,6 +2,7 @@ import * as React from 'react';
 import PatientAlert from './patientAlert';
 import PatientQueue from './patientQueue';
 import PatientActivities from './patientActivities';
+import PatientStatusDiescription from './patientStatusDiescription';
 export default function PatientDetails() {
   return (
     <div className="patient-details">
@@ -100,6 +101,8 @@ export default function PatientDetails() {
       <PatientQueue />
       <br />
       <PatientActivities />
+      <br />
+      <PatientStatusDiescription />
     </div>
   );
 }

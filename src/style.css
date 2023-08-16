@@ -144,6 +144,40 @@ i {
   width: 20%;
   margin: 5px;
 }
+.patient-status-description-hedder {
+  background-color: #595959;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px 6px 0px;
+}
+.status {
+  outline: none;
+  background-color: #595959;
+  color: #ffffff;
+}
+
+.planned {
+  background-color: yellow;
+  color: #000000;
+  padding: 20px;
+}
+.progress {
+  background-color: rgb(248, 163, 5);
+  color: #000000;
+  padding: 20px;
+}
+.scheduled {
+  background-color: darkorchid;
+  color: #000000;
+  padding: 20px;
+}
+.complete {
+  background-color: green;
+  color: #000000;
+  padding: 20px;
+}
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {

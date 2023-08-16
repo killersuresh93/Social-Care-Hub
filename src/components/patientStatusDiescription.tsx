@@ -7,27 +7,45 @@ export default function PatientStatusDescription() {
       <div className="heading">
         <h3>Referral ID:XXXXXXX</h3>
       </div>
-      <div className="table-responsive">
-        <table className="table  table-light">
-          <thead>
-            <tr className="text-center">
-              <th scope="col">
-                <h4>Patient status description</h4>
-              </th>
-              <th scope="col">
-                <h4>Status</h4>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <TextEditor />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div className="patient-status-description-hedder">
+        <div>
+          <h4>Patient status description</h4>
+        </div>
+        <div>
+          <h4>
+            {' '}
+            <select
+              className="custom-select "
+            >
+              <option selected>Status</option>
+              <option className="planned" value="planned">
+                Planned
+              </option>
+              <option
+                style={{
+                  backgroundColor: 'orange',
+                  padding: '5px',
+                  color: '#000000',
+                }}
+                value="progress"
+              >
+                In Progress
+              </option>
+              <option className="scheduled" value="scheduled">
+                Scheduled
+              </option>
+              <option className="complete" value="complete">
+                Complete
+              </option>
+            </select>
+          </h4>
+        </div>
       </div>
+      <div className="">
+        <TextEditor />
+      </div>
+      <br />
     </div>
   );
 }

@@ -29,7 +29,7 @@ export default function TextEditor() {
           <a className="icon">
             <i className="fa fa-list-ol" aria-hidden="true"></i>
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
           <a className="icon-left-border">
             <i className="fa fa" aria-hidden="true"></i>
           </a>
@@ -71,7 +71,7 @@ export default function TextEditor() {
           <a className="icon">
             <i className="fa fa-align-right" aria-hidden="true"></i>
           </a>
-          &nbsp; &nbsp;
+
           <a className="icon-left-border">
             <i className="fa fa" aria-hidden="true"></i>
           </a>
